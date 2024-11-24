@@ -1,0 +1,51 @@
+.ck-content h1,
+.ck-content h2,
+.ck-content h3,
+.ck-content h4,
+.ck-content h5,
+.ck-content h6,
+.ck-content p {
+    padding: 0;
+}
+
+.ck-content h1 {
+    font-size: 2em;
+}
+
+.ck-content h2 {
+    font-size: 1.5em;
+}
+
+.ck-content h3 {
+    font-size: 1.17em;
+}
+
+.ck-content h4 {
+    font-size: 1em;
+}
+
+.ck-content h5 {
+    font-size: 0.83em;
+}
+
+.ck-content h6 {
+    font-size: 0.67em;
+}
+
+.ck-content p {
+    font-size: 1rem;
+}
+
+.ck-content ul li {
+    list-style-type: disc;
+}
+
+.ck-content ol li {
+    list-style-type: decimal;
+}
+
+.ck-content ul,
+.ck-content ol {
+    list-style: initial;
+    padding-left: 1.5rem; /* Adjust as needed */
+}

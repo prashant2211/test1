@@ -1,0 +1,720 @@
+/****** ------- Font family ------- ****** */
+@font-face {
+  font-family: 'Inter';
+  src: url('../public/assets/fonts/inter/Inter-Regular.ttf') format('truetype');
+}
+
+@import 'colors.scss';
+
+:root {
+  --theme:#{$theme};
+  --theme-light:#{$themeLight};
+  --theme2:#{$theme2};
+  --theme-midlight:#{$themeMidLight};
+  --theme3:#{$theme3};
+}
+
+.bg-primary {
+  background-color: var(--theme);
+}
+
+.bg-primary-light {
+  background-color: var(--theme-light);
+}
+
+.primary {
+  color: var(--theme);
+}
+
+.secondary {
+  color: var(--theme2);
+}
+
+.bg-secondary {
+  background-color: var(--theme2);
+}
+
+.accent-primary {
+  accent-color: var(--theme);
+}
+
+.border-primary {
+  border-color: var(--theme);
+}
+
+.border-light {
+  border-color: var(--theme-light) !important;
+}
+
+.themeHover:hover {
+  background-color: $themeHover;
+}
+
+.themeSecondaryHover:hover {
+  background-color: $themeSecondaryHover;
+}
+
+.themeHover-text {
+  color: $themeHover;
+}
+
+* {
+  font-family: 'Inter', sans-serif !important;
+}
+
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+
+
+/****** ------- Ant tabs css ------- ****** */
+.ant-tabs-nav-list {
+  padding: 18px 0px;
+
+  .ant-tabs-tab {
+    padding: 16px 24px;
+  }
+}
+
+.ant-tabs-left .ant-tabs-content-holder .ant-tabs-content .ant-tabs-tabpane {
+  padding-left: 0px;
+}
+
+
+
+/****** ------- Drawer mask css ------- ****** */
+
+.ant-drawer .ant-drawer-mask {
+  border-radius: 12px;
+}
+
+
+
+/****** ------- Ant pagination css ------- ****** */
+.ant-segmented {
+  padding: 4px;
+  background-color: $themeLight;
+  box-shadow: 0px 2px 4px 0px $themeLight inset;
+  border-radius: 10px !important;
+
+  .ant-segmented-item-selected {
+    border-radius: 8px;
+    color: $theme !important;
+  }
+
+  .ant-segmented-item {
+    color: #2F2B3DCC;
+    font-weight: 700;
+    font-size: 15px;
+    transform: none;
+    padding: 2px 4px;
+  }
+
+  .ant-segmented-item-label:hover {
+    background-color: transparent !important;
+  }
+}
+
+
+/****** ------- Remove arrow in number input field css ------- ****** */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+/****** ------- Scrollbar css ------- ****** */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(182, 182, 182, 0.5);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(182, 182, 182, 0.9);
+  cursor: pointer;
+}
+
+//notifications
+.Rollback_notifications {
+  font-family: 'Public Sans';
+  font-size: 16px;
+  font-weight: 400;
+  color: $themeMidLight;
+}
+
+
+
+/****** ------- Loader Spin css ------- ****** */
+.ant-white-spin {
+  .ant-spin-dot-item {
+    background-color: white !important;
+  }
+}
+
+
+/****** ------- Auth page css ------- ****** */
+.bgImage {
+  background-image: url("../public/assets/images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.logo-img {
+  height: 80px;
+  width: 120px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.auth_card {
+  box-shadow: 25px 25px $themeLight;
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+  }
+}
+
+.ant-form-item {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  line-height: 1.5714285714285714;
+  list-style: none;
+  font-family: "-apple-system, BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 0 px !important;
+  vertical-align: top;
+}
+
+.ticket_title {
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: $theme;
+  margin-top: 3px;
+}
+
+.title-comments {
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+// otp page
+.ant-otp .ant-otp-input {
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 30px;
+  font-weight: 600;
+  color: $theme;
+  margin: auto 5px;
+  box-sizing: border-box !important;
+}
+
+.ant-otp .ant-otp-input:focus {
+  border: 1px solid $theme;
+}
+
+.ant-form-item-control-input-content {
+  display: flex;
+}
+
+.ant-otp {
+  margin: auto;
+}
+
+.ant-input-filled {
+  background: $themeLight !important;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.resend {
+  font-family: "Raleway";
+  font-size: 18px;
+  color: $theme;
+  font-weight: 600;
+  line-height: 21.13px;
+}
+
+.auth-heading {
+  font-family: "Raleway";
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.auth-com {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.auth-heading {
+  font-family: "Raleway";
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.auth-com {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.google_logo {
+  max-width: 85%;
+  height: auto;
+}
+
+.login-page-btn {
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1019607843) inset;
+}
+
+// Card
+.card-head {
+  font-family: "Public Sans";
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-value {
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.online-user {
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+
+
+/****** ------- Ant progressbar css ------- ****** */
+.ant-progress-bg {
+  background-color: $theme !important;
+}
+
+
+
+/****** ------- Ant pagination css ------- ****** */
+.ant-pagination .ant-pagination-item-active a,
+.ant-pagination .ant-pagination-item-active a:hover {
+  background: $theme;
+  border-radius: 4px;
+  color: white;
+}
+
+.ant-pagination-item {
+  border: none !important;
+}
+
+.ant-pagination .ant-pagination-disabled .ant-pagination-item-link {
+  border: none !important;
+}
+
+.ant-pagination .ant-pagination-item-active {
+  font-weight: 600;
+  background-color: #ffffff;
+  border-color: $theme;
+}
+
+.ant-table-cell {
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.78) !important;
+}
+
+
+
+.ant-table-wrapper .ant-table-pagination.ant-pagination {
+  margin: 16px 10px;
+}
+
+.roles-title {
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 15.8px;
+  margin-top: 8px;
+}
+
+
+/****** ------- Table css ------- ****** */
+.ant-card-body {
+  padding: 0px !important;
+}
+
+thead.ant-table-thead .ant-table-cell {
+  background-color: $themeLight !important;
+  border-radius: 0px !important;
+}
+
+// .table-responsive {
+//   overflow-x: auto;
+// }
+
+.table-skeleton {
+  background-color: $themeLight;
+  border-radius: 4px;
+  opacity: 0.7;
+}
+
+.table-responsive::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.ant-table-column-title,
+.ant-table-cell {
+  white-space: nowrap;
+}
+
+.ant-table-column-sorter-inner {
+
+  .ant-table-column-sorter-up,
+  .ant-table-column-sorter-down {
+    color: rgb(196, 196, 196);
+  }
+
+  .active {
+    color: $theme !important;
+  }
+}
+
+.ant-table-wrapper .ant-table-column-title {
+  z-index: 0;
+}
+
+
+
+
+/****** ------- Image css ------- ****** */
+.ant-image-mask-info,
+.ant-image-preview-operations-wrapper {
+  svg {
+    fill: white !important;
+  }
+}
+
+/****** ------- Custome inputes css ------- ****** */
+.ant-picker-outlined:hover,
+.ant-picker-outlined:focus-within,
+.ant-select-selector,
+.ant-select-outlined:hover,
+.ant-select-outlined:focus-within,
+.ant-input-outlined:hover,
+.ant-input-outlined:focus-within {
+  border-color: $theme;
+  box-shadow: none !important;
+}
+
+.ant-select-selector {
+  padding: 19px !important;
+  border-radius: 6px !important;
+  background-color: $themeLight !important;
+  border-color: $theme !important;
+}
+
+.ant-select-item-option-selected {
+  background-color: $themeLight !important;
+}
+
+.ant-select-selector-white {
+  .ant-select-selector {
+    padding: 19px !important;
+    border-radius: 6px !important;
+    background-color: white !important;
+    border-color: #00000333 !important;
+  }
+
+  .ant-select-selector:hover {
+    border-color: $theme !important;
+    box-shadow: none !important;
+  }
+
+  .ant-form-item-explain-connected {
+    margin-top: 8px;
+  }
+}
+
+.ant-multi-select-selector {
+  .ant-select-selector {
+    padding: 5px !important;
+    border-radius: 6px !important;
+  }
+
+  .ant-select-arrow {
+    margin-top: -6px !important;
+  }
+}
+
+.input-white {
+  .ant-input-outlined {
+    background-color: white !important;
+    border-color: #00000333 !important;
+  }
+
+  .ant-input-outlined:hover {
+    border-color: $theme !important;
+    box-shadow: none !important;
+  }
+}
+
+
+// Border color while error
+.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled),
+.ant-picker-outlined.ant-picker-status-error:not(.ant-picker-disabled),
+.ant-picker-outlined.ant-picker-status-error:not(.ant-picker-disabled):hover,
+.ant-select-outlined.ant-select-status-error:not(.ant-select-customize-input) .ant-select-selector {
+  border-color: #ff4d4f !important;
+}
+
+//Date picker
+// .date-picker-white {
+//   .ant-picker-outlined {
+//     border-color: #00000333 !important;
+//     background-color: white !important;
+
+//     svg {
+//       fill: #00000333;
+//     }
+//   }
+
+//   .ant-picker-outlined:hover {
+//     border-color: $theme!important;
+//     box-shadow: none !important;
+//   }
+// }
+
+.ant-select-selection-item {
+  font-weight: 500;
+  // color: #2f2b3dcc;
+  font-size: 16px;
+}
+
+.ant-picker-outlined {
+  // background-color: $themeLight !important;
+}
+
+.ant-picker-cell-selected,
+.ant-picker-cell-in-view.ant-picker-cell-range-end,
+.ant-picker-cell-in-view.ant-picker-cell-range-start {
+  .ant-picker-cell-inner {
+    background-color: $theme !important;
+  }
+}
+
+.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-in-range:not(.ant-picker-cell-disabled):before,
+.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-disabled):before,
+.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-disabled):before {
+  background-color: $themeLight;
+}
+
+.ant-picker-active-bar {
+  background-color: $themeLight !important;
+}
+
+.ant-picker-cell-today .ant-picker-cell-inner::before {
+  border-color: $theme !important;
+}
+
+.transperant-input {
+  input {
+    background-color: transparent !important;
+  }
+}
+
+.ant-select-arrow {
+  margin-top: -3px !important;
+}
+
+//Check box
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: $theme !important;
+  border-color: $theme !important;
+}
+
+.ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+  border-color: $theme !important;
+}
+
+
+
+/****** ------- Table css ------- ****** */
+.ant-switch-checked {
+  background: $theme !important;
+  box-shadow: none !important;
+}
+
+.ant-switch-inner,
+.ant-switch:focus-visible {
+  box-shadow: none !important;
+}
+
+
+
+/****** ------- Modal css ------- ****** */
+.ant-modal .ant-modal-content {
+  position: relative;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  pointer-events: auto;
+  padding: 4px 1px !important;
+}
+
+.model-details-p {
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: $theme;
+  margin-top: 3px;
+}
+
+.ant-modal-footer {
+  margin-top: 0px !important;
+}
+
+.custom-divider {
+  border-right: 2px solid $theme;
+  margin-top: 20px;
+}
+
+.model-Reject-request {
+  font-family: "Public Sans";
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+
+
+/****** ------- Dragger upload css ------- ****** */
+
+.ant-select-selection-item {
+  font-weight: 500;
+  // color: $themeMidLight;
+  font-size: 16px;
+}
+
+.ant-upload-drag {
+  margin-top: 6px;
+  background-color: $themeLight !important;
+  border-color: $theme !important;
+}
+
+.brand-name {
+  background: $themeLight !important;
+}
+
+.ant-image-preview-operations-wrapper.ant-image-preview-close.anticon svg {
+  color: #ffffff !important;
+}
+
+.white-ant-upload-drag {
+  .ant-upload-drag {
+    background-color: white !important;
+    border-color: #00000333 !important;
+  }
+
+  .ant-upload-drag:hover {
+    border-color: $theme !important;
+  }
+}
+
+.ant-upload-wrapper.ant-upload-picture-card-wrapper {
+  display: block;
+}
+
+
+/* --------- Fade in animation css --------- */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-animation {
+  animation: fadeIn ease 0.5s;
+  animation-iteration-count: 1;
+}
+
+
+
+/* --------- CK Editor css --------- */
+
+.ck-content {
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+  min-height: 150px;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.ck-focused {
+  border-color: $theme !important;
+}
+
+.ck-button:focus {
+  box-shadow: none !important;
+  border-color: $theme !important;
+}
+
+.ck-on {
+  color: $theme !important;
+  background-color: $themeLight !important;
+}
+
+.ck-toolbar__items {
+  flex-wrap: wrap !important;
+}
+
+// .active_icon svg {
+//   fill: white !important;
+// }
+.child.active_icon svg {
+  fill: $theme !important;
+}

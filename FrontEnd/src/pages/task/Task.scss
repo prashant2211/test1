@@ -1,0 +1,20 @@
+.react-trello-board {
+    background-color: transparent !important;
+    padding: 0px !important;
+}
+
+.react-trello-lane {
+    background-color: transparent !important;
+    margin: 10px !important;
+    padding: 3px !important;
+    border: 1px dashed transparent;
+}
+
+.react-trello-board::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+
+.react-trello-lane:hover {
+    border: 1px dashed #8D5AE233;
+}
